@@ -5,7 +5,7 @@ include(manage-symbol-visibility)
 add_definitions(-include common/module_api.h)
 add_definitions(-include imageio/storage/imageio_storage_api.h)
 
-set(MODULES clipboard disk email gallery latex piwigo)
+set(MODULES clipboard disk email latex piwigo)
 
 foreach(module ${MODULES})
 	add_library(${module} MODULE "${module}.c")

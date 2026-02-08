@@ -10,14 +10,6 @@ FILE(COPY ${THEME_FILES} DESTINATION "${DARKTABLE_DATADIR}/themes")
 install(FILES ${THEME_FILES} DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/darktable/themes COMPONENT DTApplication)
 
 #
-# web gallery export support files:
-#
-FILE(GLOB WEB_FILES "style/*")
-install(FILES ${WEB_FILES} DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/darktable/style COMPONENT DTApplication)
-
-install(DIRECTORY "pswp" DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/darktable COMPONENT DTApplication)
-
-#
 # latex book template support files:
 #
 FILE(GLOB WEB_FILES "latex/*")
